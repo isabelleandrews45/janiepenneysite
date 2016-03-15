@@ -1,47 +1,35 @@
 
 //******** NAV SWITCH ON SCROLL*******************
 
-// $(document).ready(function() {
-//     $(window).scroll( function(){
-//         $('.navscroll').each( function(i){
-//             var bottom_of_object = $(this).position().top + $(this).outerHeight();
-//             var bottom_of_window = $(window).scrollTop() + $(window).height();
-//             if( bottom_of_window > bottom_of_object ){
-//                 $(this).animate({'opacity':'1'},500);
-//             }
-//         }); 
-//     });
-// });
 
-$(document).scroll(function() {
+$(window).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 800) {
-    $('.navscroll').fadeIn();
+    $('.nav').addClass('fade');
   } else {
-    $('.navscroll').fadeOut();
+    $('.nav').removeClass('fade');
   }
 });
 
-
 //********LIGHTS ON / LIGHTS OFF BUTTON*************
 
-// $('.lightson').on('click', switchLight)
+$('.lightson').on('click', switchLight)
 
-// function switchLight(){
-//   $('body').css({
-//     color:'black',
-//     background: '#f0f9ff',
-//     background: '-moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #2ba0c4 100%)',
-//     background: '-webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#2ba0c4 100%)', 
-//     background: 'linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#2ba0c4 100%)',
-//     filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#f0f9ff", endColorstr="#2ba0c4",GradientType=0 )', 
-//     backgroundImage: url(../images/roadnav.png); 
-    // });
-// });
+function switchLight(){
+  $('body').css({
+    color:'black',
+    background: '#f0f9ff',
+    background: '-moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #2ba0c4 100%)',
+    background: '-webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#2ba0c4 100%)', 
+    background: 'linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#2ba0c4 100%)',
+    filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#f0f9ff", endColorstr="#2ba0c4",GradientType=0 )', 
+    backgroundImage: url(../images/roadnav.png); 
+    });
+});
 
-// $('.lighston').click(function(){
-//     $('lightson').html("lights off!")
-//   });
+$('.lighston').click(function(){
+    $('lightson').html("lights off!")
+  });
 
 // // $('.lightsoff')
 // $('.lightsoff').on('click', switchDark)
@@ -99,8 +87,6 @@ $('.grid').masonry({
   fitWidth: true,
   resize: true,
 });
-
-
 
 
 

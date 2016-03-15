@@ -31,7 +31,6 @@ font-family: 'Sorts Mill Goudy', serif;
 header{
 	width:100%;
 	height: 200px;
-	margin-top: 20px;
 	text-align: center;
 	font-size: 30px;
 	clear:left;
@@ -48,21 +47,13 @@ header{
 		position: fixed;
 		width: 100%;
 	}
-		.navscroll{
-			display: none;
-			width: 100%;
-			height: 150px;
-			background-image: url(../images/palm.png);
-			opacity: .4; 
-
-		}
-		/*nav ul li{
-			display:inline-block; 
-			padding-right: 10px; 
-			height:20px; 
-	}
-
-}*/
+.nav {
+   opacity:1;
+   transition: all .35s cubic-bezier(.23, 1, .32, 1);
+}
+.nav.fade {
+  opacity:0.6;
+}
 
 	.lightson{
 		float:left;
@@ -162,7 +153,11 @@ header{
 			a:active {
 			    color: #E0EEEE;
 			}
-
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .grid{
 	width:100%;
 	height: 800px;
@@ -246,4 +241,8 @@ header{
 .social{
 	text-align: center;
 	padding-top: 100px;
+}
+.social a {
+	height:50px;
+	width: 50px;
 }
