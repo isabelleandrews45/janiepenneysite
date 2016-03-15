@@ -1,0 +1,249 @@
+/*
+Project Name: Janie Penney Portfolio
+Author: Isabelle Andrews
+Developer @GA in NYC
+*/
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+body{
+	margin:0 auto;
+	color:white;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,354d7c+100 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #354d7c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #000000 0%,#354d7c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #000000 0%,#354d7c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#354d7c',GradientType=0 ); /* IE6-9 */
+font-family: 'Sorts Mill Goudy', serif;
+}
+
+header{
+	width:100%;
+	height: 200px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	clear:left;
+}
+
+    	/*media query here*/
+
+	nav{
+		text-decoration: none;
+		font-size:40px;
+		padding-top: 70px;
+		overflow: hidden;
+		background-image: url(../images/palm.png);
+		position: fixed;
+		width: 100%;
+	}
+		.navscroll{
+			display: none;
+			width: 100%;
+			height: 150px;
+			background-image: url(../images/palm.png);
+			opacity: .4; 
+
+		}
+		/*nav ul li{
+			display:inline-block; 
+			padding-right: 10px; 
+			height:20px; 
+	}
+
+}*/
+
+	.lightson{
+		float:left;
+		width: 130px;
+		height: 30px;
+		margin-left: 10px;
+		font-size: 10px;
+		font-size: 15px;
+		border:none;
+		background:none;
+		color:white;
+	}
+
+.main{
+	width:100%;
+	height:600px;
+}
+.janiepenney{
+
+	font-size:120px;
+	padding-top:100px;
+	padding-bottom: 100px;
+	color:white;
+	text-align: center;
+	font-family: 'Shorelines Script Bold', serif;
+
+}
+	.linebreak{
+		font-size: 30px;
+		text-align: center;
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.description{
+		font-size:40px;
+		text-align: center;
+		padding-bottom: 100px;
+	}
+
+.about-section{
+	height: 500px;
+	width: 100%;
+	border: 1px solid #000;
+	padding-top: 30px;
+	overflow: hidden;
+}
+		.aboutpic{
+			float:right;
+		}
+	#aboutme{
+	text-align: center;
+	font-size: 60px;
+	text-align:center;
+	}
+
+	#about-text{
+		font-size: 30px;
+		float:left;
+	}
+		blockquote{
+			margin-left: 20px;
+			margin-right: 20px;
+			width: 800px;
+		}
+
+.work{
+	width:100%;
+	height: 1000px;
+}
+	#work-section{
+		text-align: center;
+		font-size: 60px;
+		margin-top: 200px;
+		padding-bottom: 50px;
+	}
+		.toggle{
+			text-align: center;
+			font-size: 30px;
+			word-spacing: 10px;
+			/* unvisited link */}
+			a:link {
+    			color: white;
+    			text-decoration: none;
+					}
+
+			/* visited link */
+			a:visited {
+   			 color: white;
+					}
+
+			/* mouse over link */
+			a:hover {
+			    color: #B4CDCD;
+			}
+
+			/* selected link */
+			a:active {
+			    color: #E0EEEE;
+			}
+
+.grid{
+	width:100%;
+	height: 800px;
+	margin: 0 auto;
+	display:inline-block;
+}
+.grid-item { 
+			width: 100px; 
+			height: 200px;
+}
+.grid-item--width2 { 
+			width: 100px; 
+			height: 100px;
+}
+.grid-item--width3 { 
+			width: 100px; 
+			height: 100px;
+}
+.grid-item--width4 { 
+			width: 100px; 
+			height: 80px;
+}
+.grid-item--width5 { 
+			width: 100px; 
+			height: 100px;
+}
+/*.grid-item--width6 { 
+			width: 100px; 
+			height: 100px;
+}
+.grid-item--width7 { 
+			width: 50px; 
+			height: 100px;
+}
+.grid-item--width8 { 
+			width: 100px; 
+			height: 100px;
+}
+.grid-item--width9 { 
+			width: 150px; 
+			height: 50px;
+}
+.grid-item--width10 { 
+			width: 100px; 
+			height: 50px;
+}
+.grid-item--width11 { 
+			width: 50px; 
+			height: 100px;
+}
+.grid-item--width12 { 
+			width: 100px; 
+			height: 200px;
+}
+*/
+.contact{
+	width: 100%;
+	height: 600px;
+}
+	#contact-section{
+		text-align: center;
+		font-size: 60px;
+		margin-top: 200px;
+		padding-bottom: 50px;
+	}
+
+		#contact_form{
+			text-align: center;
+			line-height: 1.6;
+		}
+			#name{
+				margin-top: 10px;
+			}
+			#email{
+				margin-top: 10px;
+			}
+			#message{
+				margin-bottom: 20px;
+				margin-top: 10px;
+			}
+.social{
+	text-align: center;
+	padding-top: 100px;
+}
