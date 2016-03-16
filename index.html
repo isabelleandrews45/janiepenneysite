@@ -44,7 +44,7 @@
 			<a href="#contact-section" id="contact-btn">contact </a>
 				
 
-				<button class="lightson"> 
+				<button class="lightson on"> 
 				lights on!
 				</button>
 
@@ -104,13 +104,25 @@
 		<a href="all">all</a> | <a href="videos">videos</a> | <a href="photos">photos</a>
 		</div>
 
-<div class="single-item">
-    <div><img src="images/matcha.png" alt=""></div>
-    <div><img src="images/ollie.png" alt=""></div>
-    <div><img src="images/floridadoor.png" alt=""></div>
-    <div><img src="images/caro.png" alt=""></div>
-    <div><img src="images/surfboards.jpg" alt=""></div>
-    <div><img src="images/waves.png" alt=""></div>
+<div class="photos">
+    <div class="photo1">
+    	<img src="images/ollie.png" alt="">
+    		<p id="ollie">OLLIE</p>
+    </div>
+    
+    <div>
+    	<div class="photo2">
+    		<img src="images/floridadoor.png" alt="">
+    			<p id="aes">AESTHETICS</p>
+    	</div>
+    </div>
+
+    <div>
+    	<div class="photo3">
+    		<img src="images/cityrain.png" alt="">
+    			<p id="sunday">SUNDAY</p>
+    	</div>
+    </div>
 </div>
 
 </div>
@@ -124,7 +136,19 @@
 	contact
 	</div>
 
-			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+		<div class="email">
+		<img src="images/email.png">
+		<br><br>
+		janiepenney@gmail.com
+		<br><br>
+		</div>
+
+<!-- 	<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form_response">
+  <input type="hidden" name="to_email" value="kimberlygoulbourne@gmail.com" />
+  <input type="hidden" name="to_name" value="Kim G." />
+  <input type="hidden" name="to_subject" value="A Message From Your Website" /> -->
+
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
 			<div class="row">
 			
 			<input id="name" class="input" name="name" placeholder="your name"type="text" value="" size="30" /><br />
@@ -141,10 +165,16 @@
 			</div>
 			
 			<input id="submit_button" type="submit" value="send email" />
-			</form>		
+			</form>
+
+<!-- 	<iframe name="form_response" style="width:0;height:0;visibility:hidden;overflow:hidden;"></iframe> -->
+
+</form>
+
+					
 
 		<div class="social">
-
+		follow me <br><br>
 		<a href="https://twitter.com/janiepenney" target="_blank">
 			<img src="images/twitter.png">
 		</a>
@@ -153,14 +183,10 @@
 			<img src="images/instagram.png">
 		</a>
 
-		<span class="linkedin">
-		<a href="https://www.linkedin.com/in/janie-penney-a36a6757" target="_blank">
-			<img src="images/linkedin.png">
-		</a>
-		</span>
-
 		</div>
+</div>
 
+<button class="back"> back to top </button>
 
 	<script type="text/javascript" src="js/index.js"></script>
 
