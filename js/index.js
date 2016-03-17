@@ -21,9 +21,15 @@ $(window).scroll(function() {
 });
 
 });
+
+//******NAV STUFF*****//
+
+// select element in jquery and then on click add a text-decoration of underline 
+
 // //********LIGHTS ON / LIGHTS OFF BUTTON*************
 
 $('.lightson').on('click', toggleLight);
+$('.on').on('click', switchDark );
 
 function toggleLight(){
   if (!lightsOn) {
@@ -52,7 +58,7 @@ function switchLight(){
   $('.toggle').css({
     color: 'black',
   });
-   $('.lightson').html("lights off!")
+   $('.lightson').html("lights off!");
 }
 
 function switchDark(){
@@ -63,9 +69,9 @@ function switchDark(){
     background: '-webkit-linear-gradient(top,  #000000 0%,#354d7c 100%)', /* Chrome10-25,Safari5.1-6 */
     background: 'linear-gradient(to bottom,  #000000 0%,#354d7c 100%)', /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#354d7c",GradientType=0 )', /* IE6-9 */
-    fontFamily: 'Sorts Mill Goudy', serif,
+    fontFamily: 'Sorts Mill Goudy', serif
   });
-  $('.lightson').html("lights on!")
+  $('.lightson').html("lights on!");
 }
 
 
@@ -102,40 +108,50 @@ $('.navtext a').each(function() {
       }
    });
 
+//*******IMAGE GRID********//
+
 
 //******SLICK CAROUSEL IMAGES**********
-//  
- $(document).ready(function(){
-$('.photos').slick({
-  centerMode: true,
-  slidesToShow: 2,
-  centerPadding: '60px',
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
+// //  
+//  $(document).ready(function(){
+// $('.photos').slick({
+//   centerMode: true,
+//   slidesToShow: 2,
+//   centerPadding: '60px',
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
 
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-});
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 2
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+// });
+
+ //*******BACK TO TOP*******//
+//  $('.back').on('click', function(event) {
+//    event.preventDefault();
+//    $('html, body').animate({
+//        scrollTop: $('.about-section').offset().top // minus header height
+//    }, 1500);
+// });
 
 // on scroll, show paralLax affect - each component loading a bit different times
 
