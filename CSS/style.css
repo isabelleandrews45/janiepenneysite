@@ -15,18 +15,18 @@ Developer @GA in NYC
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
 body{
-	margin:0 auto;
-	color:white;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,354d7c+100 */
-	background: #000000; /* Old browsers */
-	background: -moz-linear-gradient(top,  #000000 0%, #354d7c 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #000000 0%,#354d7c 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #000000 0%,#354d7c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#354d7c',GradientType=0 ); /* IE6-9 */
-	font-family: 'Sorts Mill Goudy', serif;
-	display: none;
+    margin:0 auto;
+    color:white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,354d7c+100 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000, #354d7c, #000000); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000, #354d7c, #000000); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000, #354d7c, #000000); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#354d7c',GradientType=0 ); /* IE6-9 */
+    background-size: cover;
+  font-family: 'Sorts Mill Goudy', serif;
+    display: none;
 }
 
 header{
@@ -34,6 +34,10 @@ header{
 	height: 200px;
 	text-align: center;
 	font-size: 30px;
+	position: fixed;
+  	z-index: 9999;
+ 	top:0;
+ 	left: 0;
 }
 .main img{
 	width: 10%;
@@ -44,9 +48,9 @@ header{
 		font-size:40px;
 		padding-top: 70px;
 		background-image: url(../images/palm.png);
-		position: fixed;
+		position: relative;
 		width: 100%;
-		z-index: 50;
+		/*z-index: 50;*/
 	}
 
  .nav {
@@ -61,10 +65,32 @@ header{
 			padding-right: 120px;
 			position: relative;
 		}
-			.navtext .active {
+/*			.navtext .active {
 				text-decoration: underline; 
 			}
+				.navtext > a {
+				  position: relative;
+				  color: white;
+				  text-decoration: none;
+				}
 
+				.navtext > a:hover {
+				  color: white;
+				}				
+				.navtext > a:before {
+				  content: "";
+				  position: absolute;
+				  width: 100%;
+				  height: 2px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #000;
+				  visibility: hidden;
+				  -webkit-transform: scaleX(0);
+				  transform: scaleX(0);
+				  -webkit-transition: all 0.3s ease-in-out 0s;
+				  transition: all 0.3s ease-in-out 0s;
+				}*/
 	.lightson{
 		float:left;
 		width: 130px;
@@ -285,7 +311,6 @@ header{
 
 .grid{
 	width:100%;
-	background-color: black;
 	height: 700px;
 	position: relative;
 }
@@ -311,7 +336,7 @@ header{
 			border-bottom: 1px solid black;
 			cursor: pointer;
 		}
-			.overlay{
+			.overlay1{
 				display: none;
 				position: absolute;
 				top: 0;
@@ -338,7 +363,7 @@ header{
 					overflow: auto;
 					background: url(../images/ollie.png) center center no-repeat;
 				}
-					.exit{
+					.exit1{
 						color: white;
 						font-size: 80px;
 						font-family: 'Coming Soon', cursive;
@@ -379,7 +404,20 @@ header{
 			background-size: cover;
 			border-bottom: 1px solid black;
 			cursor: pointer;
-		}/*
+		}
+			.overlay2{
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.8); /*black;*/
+				z-index:1001;
+				-moz-opacity: 0.8;
+				/*opacity:.80;*/
+				/*filter: alpha(opacity=80);*/
+			}
 				.expandimg2 {
 					display: none;
 					position: absolute;
@@ -393,15 +431,29 @@ header{
 					z-index:10;
 					overflow: auto;
 					background: url(../images/caro.png) center center no-repeat;
-				}*/
+				}		
+					.exit2{
+						color: white;
+						font-size: 80px;
+						font-family: 'Coming Soon', cursive;
+						font-weight: 300;
+						position: absolute;
+						top:20px;
+						right: 20px;
+						z-index: 30;
+						display: block;
+						border: none;
+						cursor: pointer;
+					}
 		.cnt3 {
 			width: 100%;
 			height: 350px;
 			background: url(../images/cityrain.png) center center no-repeat;
 			background-size: cover;
 			border-bottom: 1px solid black;
+			cursor: pointer;
 		}
-/*				.expandimg3 {
+				.expandimg3 {
 					display: none;
 					position: absolute;
 					top: 15%;
@@ -414,7 +466,33 @@ header{
 					z-index:10;
 					overflow: auto;
 					background: url(../images/cityrain.png) center center no-repeat;
-				}		*/
+				}
+				.overlay3{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,.8); /*black;*/
+					z-index:1001;
+					-moz-opacity: 0.8;
+					/*opacity:.80;*/
+					/*filter: alpha(opacity=80);*/
+				}
+					.exit3{
+						color: white;
+						font-size: 80px;
+						font-family: 'Coming Soon', cursive;
+						font-weight: 300;
+						position: absolute;
+						top:20px;
+						right: 20px;
+						z-index: 30;
+						display: block;
+						border: none;
+						cursor: pointer;
+					}
 		.cnt4 {
 			width: 100%;
 			height: 350px;
@@ -423,7 +501,7 @@ header{
 			border-bottom: 1px solid black;
 			cursor: pointer;
 		}
-/*				.expandimg4 {
+				.expandimg4 {
 					display: none;
 					position: absolute;
 					top: 15%;
@@ -437,7 +515,32 @@ header{
 					overflow: auto;
 					background: url(../images/matcha.png) center center no-repeat;
 				}		
-*/
+				.overlay4{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,.8); /*black;*/
+					z-index:1001;
+					-moz-opacity: 0.8;
+					/*opacity:.80;*/
+					/*filter: alpha(opacity=80);*/
+				}
+					.exit4{
+						color: white;
+						font-size: 80px;
+						font-family: 'Coming Soon', cursive;
+						font-weight: 300;
+						position: absolute;
+						top:20px;
+						right: 20px;
+						z-index: 30;
+						display: block;
+						border: none;
+						cursor: pointer;
+					}
 		.cnt5 {
 			width: 100%;
 			height: 350px;
@@ -446,7 +549,7 @@ header{
 			border-bottom: 1px solid black;
 			cursor: pointer;
 		}		
-/*				.expandimg5 {
+				.expandimg5 {
 					display: none;
 					position: absolute;
 					top: 15%;
@@ -458,8 +561,34 @@ header{
 					background-color: white;
 					z-index:10;
 					overflow: auto;
-					background: url(../images/ollie.png) center center no-repeat;
-				}	*/	
+					background: url(../images/openroad.png) center center no-repeat;
+				}
+				.overlay5{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,.8); /*black;*/
+					z-index:1001;
+					-moz-opacity: 0.8;
+					/*opacity:.80;*/
+					/*filter: alpha(opacity=80);*/
+				}
+					.exit5{
+						color: white;
+						font-size: 80px;
+						font-family: 'Coming Soon', cursive;
+						font-weight: 300;
+						position: absolute;
+						top:20px;
+						right: 20px;
+						z-index: 30;
+						display: block;
+						border: none;
+						cursor: pointer;
+					}		
 		.cnt6 {
 			width: 100%;
 			height: 350px;
@@ -468,7 +597,7 @@ header{
 			border-bottom: 1px solid black;
 			cursor: pointer;
 		}
-/*				.expandimg6 {
+				.expandimg6 {
 					display: none;
 					position: absolute;
 					top: 15%;
@@ -480,8 +609,34 @@ header{
 					background-color: white;
 					z-index:10;
 					overflow: auto;
-					background: url(../images/ollie.png) center center no-repeat;
-				}	*/			
+					background: url(../images/floridadoor.png) center center no-repeat;
+				}
+				.overlay6{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,.8); /*black;*/
+					z-index:1001;
+					-moz-opacity: 0.8;
+					/*opacity:.80;*/
+					/*filter: alpha(opacity=80);*/
+				}
+					.exit6{
+						color: white;
+						font-size: 80px;
+						font-family: 'Coming Soon', cursive;
+						font-weight: 300;
+						position: absolute;
+						top:20px;
+						right: 20px;
+						z-index: 30;
+						display: block;
+						border: none;
+						cursor: pointer;
+					}				
 /*PHOTO CAROUSEL*/
 
 /*.photos{

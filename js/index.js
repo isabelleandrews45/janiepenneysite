@@ -26,6 +26,10 @@ $(window).scroll(function() {
 
 $('#about-btn').on('click', function(){
   $('#about-btn').css('text-decoration', 'underline')
+// } else {
+//   $('#about-btn').css('text-decoration', 'underline')
+// }
+// });
 });
 
 $('#work-btn').on('click', function(){
@@ -131,56 +135,84 @@ $('#contact-btn').on('click', function(event) {
 //    });
 
 //*******IMAGE GRID********//
-
+//photo 1 
 $('.cnt1').on('click', function(){
-  $('.overlay').css('display', 'block');
+  $('.overlay1').css('display', 'block');
 });
 $('.cnt1').on('click', function(){
   $('.expandimg1').css('display', 'block');
 });
-
-// $('.cnt2').on('click', function(){
-//   $('.overlay').css('display', 'block');
-// });
-// $('.cnt2').on('click', function(){
-//   $('.expandimg').css('display', 'block');
-// });
-
-// $('.cnt3').on('click', function(){
-//   $('.overlay').css('display', 'block');
-// });
-// $('.cnt3').on('click', function(){
-//   $('.expandimg').css('display', 'block');
-// });
-
-// $('.cnt4').on('click', function(){
-//   $('.overlay').css('display', 'block');
-// });
-// $('.cnt4').on('click', function(){
-//   $('.expandimg').css('display', 'block');
-// });
-
-// $('.cnt5').on('click', function(){
-//   $('.overlay').css('display', 'block');
-// });
-// $('.cnt5').on('click', function(){
-//   $('.expandimg').css('display', 'block');
-// });
-
-// $('.cnt6').on('click', function(){
-//   $('.overlay').css('display', 'block');
-// });
-// $('.cnt6').on('click', function(){
-//   $('.expandimg').css('display', 'block');
-// });
-
-$('.exit').on('click', function(){
-  $('.overlay').css('display', 'none');
+$('.exit1').on('click', function(){
+  $('.overlay1').css('display', 'none');
 });
-$('.exit').on('click', function(){
-  $('.expandimg').css('display', 'none');
+$('.exit1').on('click', function(){
+  $('.expandimg1').css('display', 'none');
 });
-
+//photo 2
+$('.cnt2').on('click', function(){
+  $('.overlay2').css('display', 'block');
+});
+$('.cnt2').on('click', function(){
+  $('.expandimg2').css('display', 'block');
+});
+$('.exit2').on('click', function(){
+  $('.overlay2').css('display', 'none');
+});
+$('.exit2').on('click', function(){
+  $('.expandimg2').css('display', 'none');
+});
+//photo 3
+$('.cnt3').on('click', function(){
+  $('.overlay3').css('display', 'block');
+});
+$('.cnt3').on('click', function(){
+  $('.expandimg3').css('display', 'block');
+});
+$('.exit3').on('click', function(){
+  $('.overlay3').css('display', 'none');
+});
+$('.exit3').on('click', function(){
+  $('.expandimg3').css('display', 'none');
+});
+//photo 4
+$('.cnt4').on('click', function(){
+  $('.overlay4').css('display', 'block');
+});
+$('.cnt4').on('click', function(){
+  $('.expandimg4').css('display', 'block');
+});
+$('.exit4').on('click', function(){
+  $('.overlay4').css('display', 'none');
+});
+$('.exit4').on('click', function(){
+  $('.expandimg4').css('display', 'none');
+});
+//photo 5
+$('.cnt5').on('click', function(){
+  $('.overlay5').css('display', 'block');
+});
+$('.cnt5').on('click', function(){
+  $('.expandimg5').css('display', 'block');
+});
+$('.exit5').on('click', function(){
+  $('.overlay5').css('display', 'none');
+});
+$('.exit5').on('click', function(){
+  $('.expandimg5').css('display', 'none');
+});
+//photo 6
+$('.cnt6').on('click', function(){
+  $('.overlay6').css('display', 'block');
+});
+$('.cnt6').on('click', function(){
+  $('.expandimg6').css('display', 'block');
+});
+$('.exit6').on('click', function(){
+  $('.overlay6').css('display', 'none');
+});
+$('.exit6').on('click', function(){
+  $('.expandimg6').css('display', 'none');
+});
 //********SCROLL BACK TO TOP*******//
 
 $('.back').on('click', function(event) {
@@ -240,8 +272,8 @@ $('.back').on('click', function(event) {
 
 // make sure all works responsively
 
-// margin between photos is too large
+// underline on nav not working properly
 
-// add more photos 
+// background gradient retsarting at contact section
 
-// why is image hover not consis
+// lights on/off - want it to fade on page load 
