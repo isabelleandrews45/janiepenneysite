@@ -24,21 +24,18 @@ $(window).scroll(function() {
 
 //******NAV HIGHLIGHTS*****//
 
-$('#about-btn').on('click', function(){
-  $('#about-btn').css('text-decoration', 'underline')
-// } else {
-//   $('#about-btn').css('text-decoration', 'underline')
-// }
+// $('#about-btn').on('click', function(){
+//   $(this).css('border-bottom', '1px solid green');
+
 // });
-});
 
-$('#work-btn').on('click', function(){
-  $('#work-btn').css('text-decoration', 'underline')
-});
+// $('#work-btn').on('click', function(){
+//   $('#work-btn').css('text-decoration', 'underline')
+// });
 
-$('#contact-btn').on('click', function(){
-  $('#contact-btn').css('text-decoration', 'underline')
-});
+// $('#contact-btn').on('click', function(){
+//   $('#contact-btn').css('text-decoration', 'underline')
+// });
 // select element in jquery and then on click add a text-decoration of underline 
 
 // //********LIGHTS ON / LIGHTS OFF BUTTON*************
@@ -66,8 +63,11 @@ function switchLight(){
     background: 'linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#2ba0c4 100%)',
     filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#f0f9ff", endColorstr="#2ba0c4",GradientType=0 )', 
   });
-  $('body').fadeIn( 2000, function(){
-  });
+  // $('body').fadeIn( 2000, function(){
+  //     $(this).css({
+  //       'backgroud': 'background-color 0.5s ease',
+  //     });
+  // });
   $('.janiepenney').css({
     color: 'black',
   });
@@ -81,6 +81,15 @@ function switchLight(){
 function switchDark(){
   $('body').css({
     color: 'white',
+    // background: '#000000', /* Old browsers */
+    // background: '-moz-linear-gradient(top, #000000, #354d7c, #000000)', /* FF3.6-15 */
+    // background: '-webkit-linear-gradient(top, #000000, #354d7c, #000000)', /* Chrome10-25,Safari5.1-6 */
+    // background: 'linear-gradient(to bottom, #000000, #354d7c, #000000)', /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#354d7c",GradientType=0 )', /* IE6-9 */
+    // 'background-size': 'cover',
+    // fontFamily: '\'Sorts Mill Goudy\', serif'
+
+    // display: none;
     background: '#000000', /* Old browsers */
     background: '-moz-linear-gradient(top,  #000000 0%, #354d7c 100%)', /* FF3.6-15 */
     background: '-webkit-linear-gradient(top,  #000000 0%,#354d7c 100%)', /* Chrome10-25,Safari5.1-6 */
@@ -88,8 +97,8 @@ function switchDark(){
     filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#354d7c",GradientType=0 )', /* IE6-9 */
     fontFamily: '\'Sorts Mill Goudy\', serif'
   });
-  $('body').fadeIn( 2000, function(){
-  });
+  // $('body').fadeIn( 2000, function(){
+  // });
   $('.janiepenney').css({
     color: 'white',
   });
