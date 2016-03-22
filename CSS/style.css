@@ -51,6 +51,8 @@ header{
 		background-image: url(../images/palm.png);
 		position: relative;
 		width: 100%;
+		padding-top: 40px;
+		padding-bottom: 30px;
 		/*z-index: 50;*/
 	}
 
@@ -62,7 +64,10 @@ header{
 .nav.fade {
   opacity:0.8;
 }
-
+/*.underline{
+	border-bottom:3px solid #B4CDCD;
+}*/
+/*
 .about-borderRight {
 	border-right: 4px solid #ccc; 
 }
@@ -87,7 +92,7 @@ header{
     /*margin-bottom: -4px;*/
 }
 
-.test:hover {
+/*.test:hover {
     border-bottom: 4px solid red;
 }
 
@@ -104,15 +109,15 @@ header{
 	position: absolute;
 	top: 4em;
 	left: 1em;
-}
+}*/
 
 
-		/*.navtext{
+		.navtext{
 			padding-bottom: 20px;
 			padding-right: 120px;
 			position: relative;
 		}
-			.navtext .active {
+/*			.navtext .active {
 				text-decoration: underline; 
 			}
 				.navtext > a {
@@ -143,13 +148,14 @@ header{
 		width: 130px;
 		height: 30px;
 		margin-left: 10px;
-		font-size: 10px;
 		font-size: 15px;
 		border:none;
 		background:none;
 		color:white;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
+		position: relative;
+		bottom: 35px;
 	}
 
 .main{
@@ -747,7 +753,8 @@ header{
 		text-align: center;
 		font-size: 60px;
 		padding-bottom: 20px;
-		padding-top: 200px;
+		padding-top: 100px;
+		margin-top: 200px;
 	}
 
 		#contact_form{

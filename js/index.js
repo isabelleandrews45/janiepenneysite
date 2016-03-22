@@ -23,12 +23,41 @@ $(window).scroll(function() {
 });
 
 //******NAV HIGHLIGHTS*****//
+  //add underline
+$('#about-btn').on('click', function(){
+  $('.underline-abt').css('border-bottom', '3px solid #B4CDCD')
+});
+  //remove other underlines
+  $('#about-btn').on('click', function(){
+  $('.underline-work').css('border-bottom', 'none')
+});
+  $('#about-btn').on('click', function(){
+  $('.underline-contact').css('border-bottom', 'none')
+});
 
-// $('#about-btn').on('click', function(){
-//   $(this).css('border-bottom', '1px solid green');
+//add underline
+$('#work-btn').on('click', function(){
+  $('.underline-work').css('border-bottom', '3px solid #B4CDCD')
+});
+//remove other underlines
+  $('#work-btn').on('click', function(){
+  $('.underline-abt').css('border-bottom', 'none')
+});
+  $('#work-btn').on('click', function(){
+  $('.underline-contact').css('border-bottom', 'none')
+});
 
-// });
 
+$('#contact-btn').on('click', function(){
+  $('.underline-contact').css('border-bottom', '3px solid #B4CDCD')
+});
+//remove other underlines
+  $('#contact-btn').on('click', function(){
+  $('.underline-abt').css('border-bottom', 'none')
+});
+  $('#contact-btn').on('click', function(){
+  $('.underline-work').css('border-bottom', 'none')
+});
 // $('#work-btn').on('click', function(){
 //   $('#work-btn').css('text-decoration', 'underline')
 // });
@@ -105,6 +134,9 @@ function switchDark(){
   //still white
   $('.toggle').css({
     color: 'white',
+  });
+  $('a:visited').css({
+      color: 'black',
   });
   $('.lightson').html("lights on!");
 }
@@ -228,7 +260,17 @@ $('.back').on('click', function(event) {
    event.preventDefault();
    $('html, body').animate({
        scrollTop: $('html').offset().top // minus header height
-   }, 1500);
+   }, 1500)
+});
+
+$('.back').on('click',function(){
+   $('.underline-abt').css('border-bottom', 'none')
+});
+$('.back').on('click',function(){
+   $('.underline-work').css('border-bottom', 'none')
+});
+$('.back').on('click',function(){
+   $('.underline-contact').css('border-bottom', 'none')
 });
 
 //******SLICK CAROUSEL IMAGES**********
